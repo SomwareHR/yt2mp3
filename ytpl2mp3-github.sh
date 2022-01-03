@@ -2,7 +2,7 @@
 
 # Download MP3s from a playlist (the only difference is "--yes-playlist"; and the URL, of course)
 
-$URL=$1
+URL=$1
 
 if [ $# -eq 0 ]; then
   read -p "URL of a playlist: " URL

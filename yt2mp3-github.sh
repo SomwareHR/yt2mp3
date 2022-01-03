@@ -2,7 +2,7 @@
 
 # Download MP3 from a single video
 
-$URL=$1
+URL=$1
 
 if [ $# -eq 0 ]; then
   read -p "URL of a single video: " URL
@@ -18,7 +18,7 @@ fi
  --extract-audio                   \
  --audio-quality 6                 \
  --audio-format mp3                \
- "$URL"                            \
+ $URL                              \
  --output '[%(title)s]-[%(uploader)s]-[%(id)s].%(ext)s'
 
 exit $?
